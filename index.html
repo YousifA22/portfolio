@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yousif Alsendi - Portfolio</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Oswald:wght@500&family=Inter:wght@400&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+  <!-- Background Animation Canvas -->
+  <div id="background">
+    <canvas id="bgCanvas"></canvas>
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container">
+      <ul class="nav-links" style="margin: 0 auto;">
+        <li><a href="#projects">//projects</a></li>
+        <li><a href="#experience">//experience</a></li>
+        <li><a href="#contact">//contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Name and Bio Section -->
+  <section id="bio" class="fullpage-section">
+    <div class="bio-text">
+      <h1 class="bio-title">
+        <span>YOUSIF ALSENDI</span>
+      </h1>
+      <p class="bio-subtitle">Software Developer</p>
+    </div>
+  </section>
+
+  <!-- Divider Line -->
+  <div class="section-divider" style="width: 80px; height: 4px; background: #2a2b33; margin: 0 auto 10px auto;"></div>
+
+  <!-- Expertise Section -->
+  <section id="expertise" class="fullpage-section" style="min-height: 80vh; padding: 20px 20px;">
+    <div class="container">
+      <h2 class="section-title" style="text-align: center; font-size: 6rem; line-height: 1.2;">My Expertise</h2>
+      <div class="expertise-grid" style="display: flex; justify-content: space-between; margin-top: 30px;">
+        
+        <!-- Software Development Expertise -->
+        <div class="expertise-item" style="flex: 1; padding: 20px; background: #2E2F3E; border-radius: 8px; margin-right: 10px;">
+          <h3 style="color: #f0f0f0;">
+            <span style="font-weight: 700; color: #ff69b4;">Software</span> Development
+          </h3>
+          <p>Proficient in both functional and object-oriented programming: Python, JavaScript, SQL, HTML/CSS, Java, C, Lua, PHP.</p>
+          <p>Skilled in frameworks and libraries such as Flask, Django, PyTorch, .NET, REST APIs (Spring), and more.</p>
+        </div>
+
+        <!-- Backend Development Expertise -->
+        <div class="expertise-item" style="flex: 1; padding: 20px; background: #2E2F3E; border-radius: 8px; margin-right: 10px;">
+          <h3 style="color: #f0f0f0;">
+            <span style="font-weight: 700; color: #87cefa;">Backend Dev</span> SpringBoot, APIs
+          </h3>
+          <p>Experienced in building and managing APIs using SpringBoot. Developed and maintained backend systems, including the ChangeIT! website, focusing on scalability and reliability.</p>
+        </div>
+
+        <!-- Cloud Infrastructure Expertise -->
+        <div class="expertise-item" style="flex: 1; padding: 20px; background: #2E2F3E; border-radius: 8px;">
+          <h3 style="color: #f0f0f0;">
+            <span style="font-weight: 700; color: #32cd32;">Cloud Infrastructure</span> AWS, Azure
+          </h3>
+          <p>Skilled in cloud infrastructure management, utilizing AWS and Azure for deploying scalable and secure applications. Worked with developer tools like GitHub, Azure DevOps, Jenkins, and more.</p>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Divider Line -->
+  <div class="section-divider" style="width: 80px; height: 4px; background: #2a2b33; margin: 0 auto 10px auto;"></div>
+
+  <!-- Projects Section -->
+  <section id="projects" class="fullpage-section" style="min-height: 80vh; padding: 20px 20px;">
+    <div class="container">
+      <h2 class="section-title" style="text-align: center; font-size: 6rem; line-height: 1.2;">My Work</h2>
+      <div class="project-grid" style="margin-top: 20px;">
+  
+        <!-- IntelliReq Project -->
+        <a href="https://github.com/Cmaber/IntelliReq" target="_blank" style="text-decoration: none;">
+          <div class="project" style="margin-bottom: 20px; padding: 20px; border-radius: 8px; background: #2E2F3E; display: flex; align-items: center; gap: 20px;">
+            <div style="flex: 3;">
+              <h3 style="color: #ffffff;">IntelliReq: AI Powered Detection Tool</h3>
+              <p style="color: #ffffff;">Team Lead</p>
+            </div>
+            <div style="flex: 1; text-align: center;">
+              <img src="assets/images/github_logo.png" alt="GitHub Logo" style="width: 100%; max-width: 80px;">
+            </div>
+          </div>
+        </a>
+  
+        <!-- ChangeIT! Project -->
+        <a href="https://changeitai.online" target="_blank" style="text-decoration: none;">
+          <div class="project" style="margin-bottom: 20px; padding: 20px; border-radius: 8px; background: #2E2F3E; display: flex; align-items: center; gap: 20px;">
+            <div style="flex: 3;">
+              <h3 style="color: #ffffff;">ChangeIT!: AI resume analyzer</h3>
+              <p style="color: #ffffff;">Web Development</p>
+            </div>
+            <div style="flex: 1; text-align: center;">
+              <img src="assets/images/github_logo.png" alt="GitHub Logo" style="width: 100%; max-width: 80px;">
+            </div>
+          </div>
+        </a>
+  
+        <!-- BookHub Project -->
+        <a href="https://github.com/SYSC4806Group24/SYSC4806_Online_Bookstore" target="_blank" style="text-decoration: none;">
+          <div class="project" style="margin-bottom: 20px; padding: 20px; border-radius: 8px; background: #2E2F3E; display: flex; align-items: center; gap: 20px;">
+            <div style="flex: 3;">
+              <h3 style="color: #ffffff;">BookHub: Online Book Repository</h3>
+              <p style="color: #ffffff;">Web Development</p>
+            </div>
+            <div style="flex: 1; text-align: center;">
+              <img src="assets/images/github_logo.png" alt="GitHub Logo" style="width: 100%; max-width: 80px;">
+            </div>
+          </div>
+        </a>
+  
+      </div>
+    </div>
+  </section>
+
+  <!-- Divider Line -->
+  <div class="section-divider" style="width: 80px; height: 4px; background: #2a2b33; margin: 0 auto 20px auto;"></div>
+
+  <!-- Experience Section -->
+  <section id="experience" class="fullpage-section" style="min-height: 100vh; padding: 100px 20px;">
+    <div class="container">
+      <h2 class="section-title" style="font-size: 6rem; line-height: 1.2;">Professional</h2><h2 class="section-title" style="font-size: 6rem; line-height: 1.2;">Experience</h2>
+      <div class="experience-grid">
+  
+        <!-- G2i Inc Experience -->
+        <div class="experience-item" style="margin-bottom: 20px;">
+          <button class="experience-toggle" style="width: 100%; background: #2E2F3E; padding: 15px; border: none; color: #f0f0f0; font-size: 1.5rem; text-align: left; border-radius: 8px; cursor: pointer; display: flex; justify-content: space-between;">
+            Software Developer @ G2i Inc.
+            <span style="font-size: 1rem; color: #cccccc;">Jun 2024 - Present</span>
+          </button>
+          <div class="experience-content" style="display: none; padding: 20px; background: #2E2F3E; border-radius: 8px; margin-top: 10px;">
+            <p>Worked on enhancing code efficiency for LLMs using Python, Java, and C, improving performance by 15%. Ensured high-quality integration with a focus on accuracy and reliability.</p>
+            <div class="skills">
+              <span>Python</span> <span>Java</span> <span>C</span>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Carleton University Experience -->
+        <div class="experience-item" style="margin-bottom: 20px;">
+          <button class="experience-toggle" style="width: 100%; background: #2E2F3E; padding: 15px; border: none; color: #f0f0f0; font-size: 1.5rem; text-align: left; border-radius: 8px; cursor: pointer; display: flex; justify-content: space-between;">
+            Software Developer Intern @ Carleton University
+            <span style="font-size: 1rem; color: #cccccc;">Sep 2023 - Jun 2024</span>
+          </button>
+          <div class="experience-content" style="display: none; padding: 20px; background: #2E2F3E; border-radius: 8px; margin-top: 10px;">
+            <p>Optimized existing codebase, leading to a 20% system performance boost. Maintained C and Java programs, and wrote unit tests for reliability in an Agile setting.</p>
+            <div class="skills">
+              <span>C</span> <span>Java</span> <span>Agile</span> <span>JUnit</span> <span>PyTest</span>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Clinia Experience -->
+        <div class="experience-item" style="margin-bottom: 20px;">
+          <button class="experience-toggle" style="width: 100%; background: #2E2F3E; padding: 15px; border: none; color: #f0f0f0; font-size: 1.5rem; text-align: left; border-radius: 8px; cursor: pointer; display: flex; justify-content: space-between;">
+            Software Developer Intern @ Clinia
+            <span style="font-size: 1rem; color: #cccccc;">May 2021 - Aug 2023</span>
+          </button>
+          <div class="experience-content" style="display: none; padding: 20px; background: #2E2F3E; border-radius: 8px; margin-top: 10px;">
+            <p>Developed custom CRM systems on Azure, increasing customer satisfaction by 20%. Focused on cloud infrastructure and conducted thorough testing to ensure performance.</p>
+            <div class="skills">
+              <span>Python</span> <span>Java</span> <span>Azure</span>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+
+  <!-- Divider Line -->
+  <div class="section-divider" id="contact" style="width: 80px; height: 4px; background: #2a2b33; margin: 0 auto 20px auto;"></div>
+
+  <!-- Footer Section -->
+  <footer style="padding: 50px 20px;">
+    <div class="container">
+      <p>Contact me at: <a href="mailto:yousifalsendi@outlook.com">yousifalsendi@outlook.com</a> | Phone: 613-981-4896</p>
+      <p>&copy; 2024 Yousif Alsendi. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
